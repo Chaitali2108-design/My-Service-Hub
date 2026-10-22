@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#faf9f6]">
+    <div className="min-h-screen overflow-x-clip bg-[#faf9f6] pt-[76px]">
       <Navbar
         onLogin={handleLogin}
         onRegister={handleRegister}
