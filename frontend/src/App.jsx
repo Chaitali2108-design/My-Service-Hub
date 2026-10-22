@@ -1,21 +1,42 @@
 
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import HowItWorks from './components/HowItWorks';
+import ProviderCTA from './components/ProviderCTA';
+import Footer from './components/Footer';
+
 function App() {
+  const handleLogin = () => {
+    alert('Login form will be connected in the next step.');
+  };
+
+  const handleRegister = () => {
+    alert('Registration form will be connected in the next step.');
+  };
+
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#f5f8f6] p-6">
-      <div className="max-w-md rounded-2xl border border-gray-200 bg-white p-8 text-center shadow-lg">
-        <h1 className="text-3xl font-bold text-teal-800">
-          My Service Hub
-        </h1>
+    <div className="min-h-screen overflow-x-hidden bg-[#faf9f6]">
+      <Navbar
+        onLogin={handleLogin}
+        onRegister={handleRegister}
+      />
 
-        <p className="mt-4 text-gray-600">
-          Tailwind CSS is working!
-        </p>
+      <main>
+        <Hero
+          onLogin={handleLogin}
+          onRegister={handleRegister}
+        />
 
-        <button className="mt-6 rounded-lg bg-teal-700 px-6 py-3 font-semibold text-white hover:bg-teal-800">
-          Test Button
-        </button>
-      </div>
-    </main>
+        <Services />
+
+        <HowItWorks />
+
+        <ProviderCTA onRegister={handleRegister} />
+      </main>
+
+      <Footer />
+    </div>
   );
 }
 
