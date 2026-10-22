@@ -13,7 +13,7 @@ export default function Navbar({ onLogin, onRegister }) {
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-      className="sticky top-0 z-50 border-b border-[#e9e9e1]/80 bg-[#faf9f6]/90 backdrop-blur-xl"
+      className="fixed inset-x-0 top-0 z-50 border-b border-[#e9e9e1]/80 bg-[#faf9f6]/95 backdrop-blur-xl"
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
         <a href="#home" className="group flex items-center gap-3">
