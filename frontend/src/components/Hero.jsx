@@ -47,7 +47,7 @@ export default function Hero({ onLogin, onRegister }) {
             service professionals and find the help you need, all in one place.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center gap-4 text-[#faf9f6]">
             <motion.a
               href="#services"
               whileHover={{ y: -3, scale: 1.02 }}
